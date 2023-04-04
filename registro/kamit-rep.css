@@ -10,6 +10,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	background-image: url('/1043547.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .register-box {
@@ -22,14 +25,17 @@
 h1 {
 	text-align: center;
 	font-size: 36px;
-	margin-bottom: 30px;
-	color: orange;
+	margin-bottom: 40px;
+	padding: 10px;
+	color: whitesmoke;
 }
 
 form label {
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom:20px;
 	color: white;
+	font-size: 20px;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.75);
 }
 
 form input[type="text"],
@@ -51,6 +57,7 @@ form input[type="password"] {
 .radio-buttons label {
 	margin-right: 20px;
 	color: white;
+	font-size: large;
 }
 
 .radio-buttons input[type="radio"] {
@@ -62,24 +69,33 @@ button[type="submit"] {
 	width: 100%;
 	padding: 10px;
 	margin-top: 20px;
-	background-color: orange;
+	background-color: transparent;
 	color: white;
 	border: none;
 	border-radius: 5px;
-	font-size: 16px;
+	font-size: 30px;
 	cursor: pointer;
 }
 
 button[type="submit"]:hover {
-	background-color: darkorange;
+	background-color: transparent;
 }
 .error-msg {
-	color: red;
-  }
+	color: darkorange;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	display: none;
+}
+
+  input:invalid ~ .error-msg {
+	display: block;
+}
+
   .register-box {
-	border: 2px solid darkorange;
+	border: 2px whitesmoke;
 	padding: 20px;
-	background-color: black;
+	background-color:transparent;
   }
+  
   
   
